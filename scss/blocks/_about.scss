@@ -1,0 +1,66 @@
+.about {
+    padding: 5em 0;
+
+    h1 {
+        font-weight: 600;
+    }
+    
+    p {
+        font-size: 1.4em;
+        line-height: 1.4;
+        font-weight: 100;
+        color: $color-slate;
+    }
+
+    &__inner {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__col {
+        width: 49.8%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 2em;
+        @include small {
+            width: 100%;
+        }
+
+        @include medium {
+            width: 100%;
+        }
+
+        @include large {
+            padding: 0 1em;
+            width: 49%;
+        }
+    }
+
+    h1 {
+        font-size: 4em;
+        line-height: 1.1;
+
+        @include small {
+            font-size: 3em;
+        }
+    }
+
+    &__features {
+        margin: 1.3em 0;
+        margin-bottom: 2em;
+        font-size: 1.7em;
+    }
+
+    &__list {
+        margin-bottom: .9em;
+    }
+
+    .fa {
+        color: $color-blue;
+    }
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+}

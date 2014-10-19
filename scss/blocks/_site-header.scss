@@ -1,0 +1,140 @@
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #006CE2;
+    font-size: 0;
+
+    &__trigger {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 25px;
+        height: 20px;
+        z-index: 500;
+        border-top: 1px solid $color-white;
+        border-bottom: 1px solid $color-white;
+        cursor: pointer;
+        display: none;
+
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            margin: auto;
+            height: 1px;
+            background: $color-white;
+    
+        }
+
+        @include medium {
+            display: block;
+        }
+
+        @include small {
+            display: block;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: $base-font + 5;
+        width: 20%;
+        padding: 1em;
+
+        @include medium {
+            width: 100%;
+            text-align: center;
+        }
+
+        @include small {
+            width: 100%;
+            text-align: center;
+        }
+
+        a {
+            color: $color-white;
+        }
+    }
+
+    &__nav {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: $base-font;
+        width: 80%;
+        padding: 1em;
+    
+        @include small {
+            background: $color-white;
+            box-shadow: 0px 3px 0px rgba(0,0,0,.1);
+            width: 100%;
+            text-align: center;
+            padding: 2em;
+            display: none;
+        }
+
+        @include medium {
+            background: $color-white;
+            box-shadow: 0px 3px 0px rgba(0,0,0,.1);
+            width: 100%;
+            text-align: center;
+            padding: 2em;
+            display: none;
+        }
+    }
+
+    &__wrap {
+        text-align: right;
+    }
+
+    &__list {
+        display: inline-block;
+        vertical-align: middle;
+
+        @include small {
+            display: block;
+            text-align: center;
+        }
+
+        @include medium {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__link {
+        color: lighten($color-blue, 30%);
+        display: block;
+        margin: 0 1em;
+        transition: color .3s ease-in-out;
+
+        @include small {
+            font-size: $base-font * 1.3;
+            margin-bottom: 1em;
+            color: $color-slate;
+        }
+
+        @include medium {
+            font-size: $base-font * 1.3;
+            margin-bottom: 1em;
+            color: $color-slate;
+        }
+
+        &:hover {
+            color: $color-white;
+
+            @include small {
+                color: $color-slate;
+            }
+
+            @include medium {
+                color: $color-slate;
+            }
+        }
+    }
+}

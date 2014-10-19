@@ -1,0 +1,95 @@
+.site-footer {
+    background: $color-slate;
+    padding: 5em 0 0 0;
+
+    @include small {
+        padding: 3em 0 0 0em;
+    }
+
+    @include medium {
+        padding: 3em 0 0 0em;
+    }
+
+    &__inner {
+        max-width: 1000px;
+        margin: 0 auto;
+        font-size: 0;
+    }
+
+    &__col {
+        width: 25%;
+        display: inline-block;
+        vertical-align: top;
+        font-size: $base-font;
+        color: $color-white;
+
+        @include small {
+            width: 100%;
+            margin-bottom: 2em;
+            padding-left: 2em;
+        }
+
+        @include medium {
+            width: 50%;
+            margin-bottom: 2em;
+            padding-left: 2em;
+        }
+
+        @include large {
+            padding-left: 2em;
+        }
+    }
+
+    &__title {
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        color: lighten($color-slate, 20%);
+        transition: .3s;
+        &:hover {
+            color: $color-white;
+        }
+
+        @include small {
+            margin-bottom: .5em;
+            display: block;
+        }
+
+        @include medium {
+            margin-bottom: .5em;
+            display: block;
+        }
+    }
+
+    &__copy {
+        margin-top: 5em;
+        background: darken($color-slate, 20%);
+        padding: 1.5em 2em;
+        color: lighten($color-slate, 13%);
+
+        @include small {
+            margin-top: 0em;
+        }
+
+        @include medium {
+            margin-top: 0em;
+        }
+    }
+
+    &__icons {
+        float: right;
+        a {
+            color: $color-white;
+            font-size: 1.5em;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 15px;
+            transition: .3s;
+            &:hover {
+                color: $color-yellow;
+            }
+        }
+    }
+}

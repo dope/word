@@ -1,0 +1,43 @@
+.banner {
+    background: linear-gradient($color-blue, darken($color-blue, 15%));
+    text-align: center;
+    padding: 12em 0;
+
+    @include small {
+        padding: 8em 0;
+    }
+
+    &__title {
+        font-size: 6em;
+        line-height: 1.5;
+        color: $color-white;
+
+        @include small {
+            font-size: 4.5em;
+        }
+    }
+
+    &__info {
+        font-size: 1.5em;
+        color: lighten($color-blue, 30%);
+        max-width: 400px;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 1.4;
+        margin-bottom: 30px;
+        text-align: center;
+        @include small {
+            font-size: 1.3em;
+        }
+
+        a {
+            color: $color-white;
+            border-bottom: 1px solid $color-white;
+            transition: .3s;
+            &:hover {
+                color: $color-yellow;
+                border-color: $color-yellow;
+            }
+        }
+    }
+}
