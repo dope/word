@@ -12,11 +12,12 @@
 </head>
 <body>
     <header class="site-header">
-        <span class="site-header__trigger js-trigger"></span>
+        <label class="site-header__trigger js-trigger" for="trigger"></label>
         <div class="site-header__logo">
             <a href="/">Word.</a>
-        </div>
-        <nav class="site-header__nav js-nav">
+	 </div>
+        <input type='checkbox' id='trigger' class='site-header__nav__trigger'>
+        <nav class="site-header__nav">
             <ul class="site-header__wrap">
                 <li class="site-header__list li"><a href="#" class="site-header__link">About</a></li>
                 <li class="site-header__list li"><a href="#" class="site-header__link">Portfolio</a></li>
@@ -108,7 +109,5 @@
             </span>
         </section>
     </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>

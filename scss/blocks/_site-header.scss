@@ -88,6 +88,18 @@
         }
     }
 
+    &__nav__trigger{
+	display:none;
+    }
+
+    &__nav__trigger + &__nav{
+        display:inline-block;
+    }
+
+    &__nav__trigger:checked + &__nav{
+        display:block;
+    }
+
     &__wrap {
         text-align: right;
     }
