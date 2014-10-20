@@ -1,5 +1,6 @@
 .site-header {
     position: fixed;
+    z-index: 9;
     top: 0;
     left: 0;
     width: 100%;
@@ -63,6 +64,8 @@
     }
 
     &__nav {
+	position: relative;
+	z-index: 500;
         display: inline-block;
         vertical-align: middle;
         font-size: $base-font;
