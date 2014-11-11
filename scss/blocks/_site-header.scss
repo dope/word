@@ -89,15 +89,21 @@
     }
 
     &__nav__trigger{
-	display:none;
+      display:none;
     }
 
     &__nav__trigger + &__nav{
-        display:inline-block;
+	display:inline-block;
+	@include medium {
+	  display:none;
+        }
+	@include small {
+	  display:none;
+        }
     }
 
     &__nav__trigger:checked + &__nav{
-        display:block;
+        display:inline-block;
     }
 
     &__wrap {
