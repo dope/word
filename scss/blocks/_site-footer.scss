@@ -45,6 +45,10 @@
         margin-bottom: 10px;
     }
 
+    &__list {
+        margin-bottom: 5px;
+    }
+
     &__link {
         color: lighten($color-slate, 20%);
         transition: .3s;
