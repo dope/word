@@ -1,21 +1,10 @@
-(function(window, document, $, undefined) {
+'use strict';
 
-    'use strict';
+var trigger = document.querySelector('.js-trigger');
+var nav     = document.querySelector('.js-nav');
 
-    var trigger = '.js-trigger';
-    var nav     = '.js-nav';
+function toggleMenu() {
+    nav.classList.toggle('site-header__nav--toggle');
+}
 
-    $(trigger).on('click', function() {
-        $(nav).slideToggle(200);
-    });
-
-    $(window).resize(function() {
-        if ($(window).width() > 700) {
-            $(nav).css('display', 'inline-block');
-        } else {
-            $(nav).css('display', 'none');
-        }
-    });
-
-
-})(window, document, jQuery);
+trigger.addEventListener('click', toggleMenu);
